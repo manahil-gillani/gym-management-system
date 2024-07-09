@@ -1,2 +1,2 @@
 # gym-management-system
- this is a gym management system creatded using html,css and javascript for frontend and php for backednd. database is created and populated using mysql
+ Developed a comprehensive Gym Management System to streamline and automate gym operations. This project includes features such as member registration, class scheduling, attendance tracking, payment processing, a shopping cart for gym products, recipe sharing, reviews, personalized exercise routines, and personal trainer management. Implemented using PHP for the backend, MySQL for database management, and HTML, CSS, and JavaScript for the frontend. The system ensures efficient management and improves overall operational productivity.
