@@ -1,0 +1,114 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Background color for the entire page */
+}
+
+
+header {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recipe {
+    padding: 50px 0;
+}
+.recipe {
+    padding: 50px 0;
+    position: relative; /* Required for positioning pseudo-element */
+    background-image: url('../recipe images/chocolate-lava-baked.webp'); /* Path to your image */
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.recipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* Required for z-index to work */
+    z-index: 2; /* Ensure content appears above the pseudo-element */
+}
+
+.recipe-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.recipe-info {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+.recipe-info p {
+    margin-bottom: 10px;
+}
+
+.recipe-ingredients h3,
+.recipe-instructions h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recipe-ingredients ul,
+.recipe-instructions ol {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}

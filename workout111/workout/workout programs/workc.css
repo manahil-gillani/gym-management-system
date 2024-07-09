@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+#header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+#header .fit,
+#header .fuel {
+    font-weight: bold;
+}
+#header .fit {
+    color: white;
+}
+#header .fuel {
+    color: #f74371;
+}
+
+.subheading 
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f74371;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+}
+.content {
+    margin-top: 200px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section h3 {
+    color: white;
+}
+
+.section p {
+    color: #f74371;
+}
+
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.section table td {
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.section table th {
+    padding: 15px;
+    border: 1px solid white;
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+}
+footer {
+    background-color: #f74371;
+    background-image: linear-gradient(to right, #f74371, #3b0511);
+    color: black;
+    text-align: left;
+    padding: 30px;
+}
+footer p {
+    font-weight: bold;
+}
+
+
+.join-btn {
+    background-color: white;
+    color: #f74371;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.section:nth-child(1) {
+    background-image: url('c:/Users/Hp/Downloads/image1.jpeg'); /* Replace 'image1.jpg' with the path to your image */
+    
+}
+.section:nth-child(2) {
+    background-image: url('c:/Users/Hp/Downloads/image2.jpeg'); /* Replace 'section1-bg.jpg' with the path to your image */
+}
+
+.section:nth-child(3) {
+    background-image: url('c:/Users/Hp/Downloads/image1.jpeg'); /* Replace 'section2-bg.jpg' with the path to your image */
+}
+.section:nth-child(4) {
+    background-image: url('c:/Users/Hp/Downloads/image2.jpeg'); /* Replace 'section1-bg.jpg' with the path to your image */
+}
+
+.section:nth-child(5) {
+    background-image: url('c:/Users/Hp/Downloads/image1.jpeg'); /* Replace 'section2-bg.jpg' with the path to your image */
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+}
+/* Popup menu styles */
+.popup-content a {
+    color: black; /* Set link color to black */
+    font-weight: bold; /* Set link text to bold */
+    text-decoration: underline; /* Underline link text */
+}
+
+.popup-content a:hover {
+    color: #f74371; /* Set link color to pink on hover */
+}

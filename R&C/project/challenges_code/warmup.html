@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Shred Challenge</title>
+    <link rel="stylesheet" href="fullbody.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">15 Min Warmup Routine</h1>
+            <div class="dates">
+                <p>Start Date: <span id="start-date"></span></p>
+                <p>End Date: <span id="end-date"></span></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="description">
+            <h2>Workout Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nunc nec magna laoreet efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce scelerisque ex et nunc cursus ullamcorper. Cras interdum odio nec nisl suscipit, vel blandit velit efficitur. Nam in ultrices metus.</p>
+        </section>
+
+        <section class="videos">
+            <h2>Workout Videos</h2><br>
+            <div class="video" data-video-id="nejA_F4D2ps">
+                <p>Description of video 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="video" data-video-id="xEoCXW09-pk">
+                <p>Description of video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="video" data-video-id="Wg6-xYyB0cg">
+                <p>Description of video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="video" data-video-id="_8vGQR0zxDM">
+                <p>Description of video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- Add more video thumbnails here -->
+        </section>
+
+        <button onclick="joinChallenge()" class="join-button">Join Now</button>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FITFUEL</p>
+        </div>
+    </footer>
+    <script src="fullbody.js"></script>
+    <script>
+        function joinChallenge() {
+            var userName = prompt("Please enter your name:");
+            var userID = prompt("Please enter your ID:");
+            if (userName && userID) {
+                // Redirect to join_challenge.php with parameters
+                window.location.href = "join_challenge.php?name=" + userName + "&id=" + userID;
+            }
+        }
+    </script>
+</body>
+</html>

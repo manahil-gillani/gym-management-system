@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" contet="this is a fitness website">
+    <meta name="keywords" content="for appearance of website after search">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <!-- including css file -->
+    <link rel="stylesheet" href="fun1.css">
+   
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">FITFUEL</h1>
+            <nav>
+                <div class="menu-icon">&#9776</div>
+                <ul class="nav-list">
+                    <li>HOME</li>
+                    <li>CONTACT</li>
+                    <li><a href="challenges.html">CHALLENGES</a></li>
+                    <li>WORKOUT</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--...........................hero section...........................-->
+    <section class="hero">
+<div class="hero-section">
+    <h2>Welcome to our mouthwatering recipes!</h2>
+    <form action="recipes_code/recipesearch.php" method="GET" class="search-box">
+        <input type="text" name="search_term" placeholder="search recipe">
+        <button type="submit">Search</button>
+    </form>
+</div>
+    </section>
+
+<!--...........................recipe section...........................-->
+    <section class="recipes">
+        <h1>Featured Recipes</h1>
+        <div class="recipe-section">
+            <div class="recipe-card">
+                <img src="recipe images/3-ingredient-strawberry-boba.webp" alt="strawberry boba smoothie">
+                <h2>Strawberry Smoothie</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/strawberry.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe images/avocadotoast.webp" alt="avocado toast">
+                <h2>Avocado Toast</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/avocado.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe images/chocolate-lava-baked.webp" alt="chocolate lava cake">
+                <h2>Chocolate Lava Cake</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/lavacake.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe images/easy-fish-tacos.webp" alt="Fish Tacos">
+                <h2>Fish Tacos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/fishtacos.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe images/falafelwaffles.webp" alt="falafel waffles">
+                <h2>Falafel Waffles</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/falafel.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe images/greek-baked-salmon.webp" alt="greek baked salmon">
+                <h2>Greek Baked Salmon</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a href="recipes_code/salmon.html">View Recipe</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>
+                &copy; 2024 Delicious Recipes
+            </p>
+        </div>
+    </footer>
+     <!-- including js file -->
+     <script src="fun1.js"></script>
+</body>
+</html>
